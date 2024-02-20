@@ -1,0 +1,239 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Lien vers la police Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <!-- Lien vers la feuille de style CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Rapport de Stage</title>
+</head>
+
+<body class="font-nunito">
+    <!-- into section -->
+    <div
+        class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-900 relative overflow-hidden">
+
+        <nav class="w-full fixed top-0 bg-white z-10 dark:bg-slate-900">
+            <!-- Contenu de la barre de navigation -->
+            <div class="container mx-auto py-5 flex items-center justify-between">
+                <!-- Logo et nom du site -->
+                <div class="flex items-center gap-2">
+                    <img class="w-8" src="./img/logo.png" alt="" />
+                    <span class="text-2xl font-bold text-indigo-900 dark:text-white">Mohamed Lahbib</span>
+                </div>
+                <!-- Liens de navigation -->
+                <ul class="hidden md:flex space-x-10 text-gray-600 dark:text-gray-100 font-bold text-sm uppercase">
+                    <li class="hover:text-gray-500">
+                        <a href="#">Accueil</a>
+                    </li>
+
+                    <li class="hover:text-gray-500">
+                        <a href="#works">Travaux</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#video">video</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#about">A propos </a>
+                    </li>
+
+                </ul>
+                <!-- Icône de bascule pour le menu sur les écrans plus petits -->
+                <img id="moon" src="./img/moon.png" class="hidden md:block w-5 cursor-pointer" alt="" />
+                <!-- Menu déroulant pour les écrans plus petits -->
+                <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                </div>
+                <!-- Menu déroulant pour les écrans plus petits (éléments de menu) -->
+                <ul id="menu"
+                    class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center">
+                    <li>
+                        <a id="hLink" href="#">Accueil</a>
+                    </li>
+
+                    <li>
+                        <a id="hLink" href="#works">Travaux</a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#video">video</a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#about">A propos</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <!-- Contenu de l'introduction -->
+        <!-- Image d'arrière-plan -->
+        <img class="absolute bottom-0 right-0 lg:left-0 mx-auto h-5/6 object-cover" src="./img/kig.png" alt="" />
+        <!-- Cercle décoratif -->
+        <div
+            class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-indigo-900 rounded-full -z-10">
+        </div>
+        <!-- Texte animé -->
+        <div
+            class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold">
+            <span class="text-gray-600">Etudiant</span>
+            <p id="text" class="text-red-500"></p>
+        </div>
+        <!-- Textes d'introduction -->
+        <div
+            class="hidden lg:flex flex-col gap-5 rounded-md shadow-lg absolute top-0 bottom-0 m-auto right-10 bg-white dark:bg-slate-900 dark:shadow-slate-800 p-6 h-fit w-1/3">
+            <h1 class="text-4xl font-bold text-indigo-900">Salut, je suis Mohamed</h1>
+            <p class="text-gray-400">
+                Étudiant en deuxième année de développement web à l'école Crea Genève, j'ai récemment effectué un stage
+                chez
+                K-renov
+                pour approfondir mes connaissances et acquérir une expérience pratique. J'ai travaillé sur des projets
+                concrets,
+                appliquant les compétences acquises en classe et découvrant les défis du développement web.
+
+            </p>
+
+        </div>
+    </div>
+
+
+
+    <!-- ------------------------------------------------------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+    <!-- partie Gestion -->
+    <div id="works" class="dark:bg-slate-900 py-40">
+        <div class="container mx-auto">
+            <!-- top -->
+            <div class="flex flex-col gap-3 items-center">
+                <h1 class="text-indigo-600 font-bold mt-5">Formation  </h1>
+                <h1 class="text-3xl dark:text-white">Tailwinds
+                </h1>
+                <p class="w-1/2 text-center text-gray-400">Nous allons maintenant passer a la formation tailwinds</p>
+            </div>
+            <!-- -->
+
+            <!-- bottom -->
+            <div class="p-5 sm:p-0 flex flex-wrap justify-between">
+                <!-- card 1-->
+
+
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+                    <img class="w-10" src="./img/taillogo.png" alt="" />
+                    <h1 class="font-medium text-lg dark:text-white">Formation</h1>
+
+                    <h1 class="font-medium text-lg dark:text-white"></h1>
+                    <p class="text-gray-400">
+                    Au cours de ma formation en Tailwind CSS, j'ai eu l'opportunité d'explorer cette bibliothèque CSS moderne et de
+                    découvrir ses multiples avantages en matière de développement web. Tailwind CSS a enrichi mes compétences en conception
+                    et amélioré mon efficacité dans la création d'interfaces utilisateur réactives et esthétiques. On peut diviser cette
+                    formation en 5 sections
+                    </p>
+                    <img src="./img/imgtailwind_css.png" alt="">
+
+                </div>
+                <!-- card 2 -->
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+                    <img class="w-10" src="./img/taillogo.png" alt="" />
+                    <h1 class="font-medium text-lg dark:text-white">Section 1 : Introduction et Vue d'Ensemble</h1>
+                    <p class="text-gray-400">
+                    Au fil de ma formation, j'ai plongé dans un univers captivant de design web moderne. Cette formation a été conçue pour
+                    offrir une compréhension pousser de Tailwind, du processus d'installation à l'application pratique de ses
+                    fonctionnalités.
+                    </p>
+                    <img src="./img/introtail.jpg" alt="">
+
+                </div>
+                <!-- card 3-->
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+                    <img class="w-10" src="./img/taillogo.png" alt="" />
+                    <h1 class="font-medium text-lg dark:text-white">Section 2 : Installation de Tailwind</h1>
+                    <p class="text-gray-400">
+                    La première étape de cette aventure à consister à démystifier l'installation de Tailwind. Avec des instructions claires
+                    et des paramètres de configuration personnalisables, j'ai acquis les compétences nécessaires pour intégrer rapidement et
+                    efficacement Tailwind dans mes projets, libérant ainsi le potentiel de ce Framework.
+                    </p>
+
+                    <img src="./img/installer-tailwindcss.webp" alt="">
+
+                </div>
+
+
+
+
+
+                <!-- card -->
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+                    <img class="w-10" src="./img/taillogo.png" alt="" />
+                    <h1 class="font-medium text-lg dark:text-white">Section 3 : Les Typographies</h1>
+                    <p class="text-gray-400">
+                    Des concepts fondamentaux tels que les marges, les paddings, la taille de la police et l'espacement des lignes ont été
+                    explorés en détail, offrant une vision approfondie de la manière de sculpter le texte pour une présentation visuelle
+                    percutante.
+                    </p>
+                    <img src="./img/maxresdefault.jpg" alt="">
+
+                </div>
+                <!-- card -->
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+                    <img class="w-10" src="./img/taillogo.png" alt="" />
+                    <h1 class="font-medium text-lg dark:text-white">Section 4 : Les Bordures</h1>
+                    <p class="text-gray-400">
+                    Là, j'ai maîtrisé les subtilités des rayons de bordure, des diviseurs, des contours, de l'opacité, et des box-shadow
+                    </p>
+                    <img src="./img/bordure.jpg" alt="">
+
+                </div>
+                <!-- card -->
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+                    <img class="w-10" src="./img/taillogo.png" alt="" />
+                    <h1 class="font-medium text-lg dark:text-white">Section 5 : Mise en Page</h1>
+                    <p class="text-gray-400">
+                    La conclusion de ma formation a été marquée par L'utilisation de Flexbox pour créer des mises en page dynamiques et
+                    réactives, complétée par une immersion dans les fonctionnalités de Hover, Focus et Actifs.
+                    </p>
+                    <img src="./img/flex.png" alt="">
+                    <a class="text-indigo-600 font-semibold text-xl" href="./index.html">Revenir en arrière</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- footer -->
+    <div class="w-full bg-gray-800">
+        <div class="container mx-auto py-5 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <img class="w-8" src="./img/logo.png" alt="" />
+                <span class="text-2xl font-bold text-white">MLHB.</span>
+            </div>
+            <span class="hidden md:block font-medium text-white">© 2024 Mohamed Lahbib</span>
+            <div class="flex gap-2">
+                <img class="w-4 cursor-pointer" src="./img/facebook.png" alt="" />
+                <img class="w-4 cursor-pointer" src="./img/instagram.png" alt="" />
+                <img class="w-4 cursor-pointer" src="./img/twitter.png" alt="" />
+                <img class="w-4 cursor-pointer" src="./img/linkedin.png" alt="" />
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+    <script src="./autotyping.js"></script>
+</body>
+
+</html>

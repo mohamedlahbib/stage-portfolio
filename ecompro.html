@@ -1,0 +1,239 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Lien vers la police Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <!-- Lien vers la feuille de style CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Rapport de Stage</title>
+</head>
+
+<body class="font-nunito">
+    <!-- into section -->
+    <div
+        class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-900 relative overflow-hidden">
+
+        <nav class="w-full fixed top-0 bg-white z-10 dark:bg-slate-900">
+            <!-- Contenu de la barre de navigation -->
+            <div class="container mx-auto py-5 flex items-center justify-between">
+                <!-- Logo et nom du site -->
+                <div class="flex items-center gap-2">
+                    <img class="w-8" src="./img/logo.png" alt="" />
+                    <span class="text-2xl font-bold text-indigo-900 dark:text-white">Mohamed Lahbib</span>
+                </div>
+                <!-- Liens de navigation -->
+                <ul class="hidden md:flex space-x-10 text-gray-600 dark:text-gray-100 font-bold text-sm uppercase">
+                    <li class="hover:text-gray-500">
+                        <a href="#">Accueil</a>
+                    </li>
+
+                    <li class="hover:text-gray-500">
+                        <a href="#works">Travaux</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#video">video</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#about">A propos </a>
+                    </li>
+
+                </ul>
+                <!-- Icône de bascule pour le menu sur les écrans plus petits -->
+                <img id="moon" src="./img/moon.png" class="hidden md:block w-5 cursor-pointer" alt="" />
+                <!-- Menu déroulant pour les écrans plus petits -->
+                <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                </div>
+                <!-- Menu déroulant pour les écrans plus petits (éléments de menu) -->
+                <ul id="menu"
+                    class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center">
+                    <li>
+                        <a id="hLink" href="#">Accueil</a>
+                    </li>
+
+                    <li>
+                        <a id="hLink" href="#works">Travaux</a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#video">video</a>
+                    </li>
+                    <li>
+                        <a id="hLink" href="#about">A propos</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <!-- Contenu de l'introduction -->
+        <!-- Image d'arrière-plan -->
+        <img class="absolute bottom-0 right-0 lg:left-0 mx-auto h-5/6 object-cover" src="./img/kig.png" alt="" />
+        <!-- Cercle décoratif -->
+        <div
+            class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-indigo-900 rounded-full -z-10">
+        </div>
+        <!-- Texte animé -->
+        <div
+            class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold">
+            <span class="text-gray-600">Etudiant</span>
+            <p id="text" class="text-red-500"></p>
+        </div>
+        <!-- Textes d'introduction -->
+        <div
+            class="hidden lg:flex flex-col gap-5 rounded-md shadow-lg absolute top-0 bottom-0 m-auto right-10 bg-white dark:bg-slate-900 dark:shadow-slate-800 p-6 h-fit w-1/3">
+            <h1 class="text-4xl font-bold text-indigo-900">Salut, je suis Mohamed</h1>
+            <p class="text-gray-400">
+                Étudiant en deuxième année de développement web à l'école Crea Genève, j'ai récemment effectué un stage
+                chez
+                K-renov
+                pour approfondir mes connaissances et acquérir une expérience pratique. J'ai travaillé sur des projets
+                concrets,
+                appliquant les compétences acquises en classe et découvrant les défis du développement web.
+
+            </p>
+
+        </div>
+    </div>
+
+
+
+    <!-- ------------------------------------------------------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+    <!-- partie Gestion -->
+    <div id="works" class="dark:bg-slate-900 py-40">
+        <div class="container mx-auto">
+            <!-- top -->
+            <div class="flex flex-col gap-3 items-center">
+                <h1 class="text-indigo-600 font-bold mt-5">Formation  </h1>
+                <h1 class="text-3xl dark:text-white">E-Com Pro
+                </h1>
+                <p class="w-1/2 text-center text-gray-400">Pour varier mes compétences est touché à diffèrent milieux du monde des développeurs mon maitre de stage m'a
+                généreusement offert la formation E-com pro</p>
+            </div>
+            <!-- -->
+
+            <!-- bottom -->
+            <div class="p-5 sm:p-0 flex flex-wrap justify-between">
+                <!-- card 1-->
+
+
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+                    <img class="w-10" src="./img/ecommpro.png" alt="" />
+                    <h1 class="font-medium text-lg dark:text-white">Une Opportunité</h1>
+
+                    <h1 class="font-medium text-lg dark:text-white"></h1>
+                    <p class="text-gray-400">
+                    Au cours de mon stage de 6 mois, j'ai eu l'opportunité d’étudier la formation en ligne E-Com Pro, une expérience qui a
+                    grandement contribué à mon développement professionnel dans le domaine du commerce électronique. Cette formation s'étend
+                    sur 6 semaines, chacune axée sur des aspects cruciaux du commerce en ligne.
+                    </p>
+                    <img src="./img/eco1.png" alt="">
+
+                </div>
+                <!-- card 2 -->
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+                    <img class="w-10" src="./img/ecommpro.png" alt="" />
+                    <h1 class="font-medium text-lg dark:text-white">Semaine 1</h1>
+                    <p class="text-gray-400">
+                    La première semaine à jeter les bases en abordant des sujets essentiels tels que le mindset, la finance et la fiscalité.
+                    Ces notions ont joué un rôle dans ma compréhension globale du fonctionnement du monde des affaires.
+                    </p>
+                    <img src="./img/comptabilité.jpg" alt="">
+
+                </div>
+                <!-- card 3-->
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+                    <img class="w-10" src="./img/ecommpro.png" alt="" />
+                    <h1 class="font-medium text-lg dark:text-white">Semaine 2</h1>
+                    <p class="text-gray-400">
+                    La deuxième semaine a été dédiée à la création de l'offre, mettant l'accent sur des stratégies marketing pertinentes.
+                    </p>
+
+                    <img src="./img/Marketing.jpeg" alt="">
+
+                </div>
+
+
+
+
+
+                <!-- card -->
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+                    <img class="w-10" src="./img/ecommpro.png" alt="" />
+                    <h1 class="font-medium text-lg dark:text-white">Semaine 3</h1>
+                    <p class="text-gray-400">
+                    La semaine 3 s'est avérée être la plus bénéfique et passionnante. Durant cette période, j'ai acquis des compétences
+                    pratiques en création et optimisation de sites Shopify. J'ai appris à configurer des sites monoproduits et
+                    multiproduits, ainsi qu'à améliorer l'esthétique globale avec des techniques de branding efficaces.
+                    </p>
+                    <img src="./img/ades.jpeg" alt="">
+
+                </div>
+                <!-- card -->
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+                    <img class="w-10" src="./img/ecommpro.png" alt="" />
+                    <h1 class="font-medium text-lg dark:text-white">Semaine 4 & 5</h1>
+                    <p class="text-gray-400">
+                    La semaine 4 a plongé dans le monde de la publicité en ligne avec des modules dédiés à Facebook Ads et TikTok Ads.
+                    Offrant des stratégies publicitaires concrètes. <br> <br>
+                    La semaine 5 a élargi mes connaissances avec des modules sur les publicités sur Snapchat et Pinterest.
+                    </p>
+                    <img src="./img/Tik-Tok-Ads-2.jpeg" alt="">
+
+                </div>
+                <!-- card -->
+                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
+                    <img class="w-10" src="./img/ecommpro.png" alt="" />
+                    <h1 class="font-medium text-lg dark:text-white">Semaine 6 </h1>
+                    <p class="text-gray-400">
+                    Enfin, la semaine 6 a clôturé la formation en abordant des aspects cruciaux tels que le SEO, le référencement naturel et
+                    l'email marketing
+
+                    </p>
+                    <img src="./img/seooo.jpg" alt="">
+                    <a class="text-indigo-600 font-semibold text-xl" href="./index.html">Revenir en arrière</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- footer -->
+    <div class="w-full bg-gray-800">
+        <div class="container mx-auto py-5 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <img class="w-8" src="./img/net.png" alt="" />
+                <span class="text-2xl font-bold text-white">MLHB.</span>
+            </div>
+            <span class="hidden md:block font-medium text-white">© 2024 Mohamed Lahbib</span>
+            <div class="flex gap-2">
+                <img class="w-4 cursor-pointer" src="./img/facebook.png" alt="" />
+                <img class="w-4 cursor-pointer" src="./img/instagram.png" alt="" />
+                <img class="w-4 cursor-pointer" src="./img/twitter.png" alt="" />
+                <img class="w-4 cursor-pointer" src="./img/linkedin.png" alt="" />
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+    <script src="./autotyping.js"></script>
+</body>
+
+</html>
